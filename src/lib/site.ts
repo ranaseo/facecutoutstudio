@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Face Cutout Studio",
   url: "https://facecutoutstudio.com",
-  email: "hello@facecutoutstudio.com",
+  email: "facecutoutstudio@gmail.com",
   // WhatsApp number in international format, digits only (e.g. "8801XXXXXXXXX"). Leave empty to hide the WhatsApp button.
-  whatsapp: "" as string,
+  whatsapp: "8801917112171" as string,
   founder: "Al Rubel Rana",
   updated: "2026-11-12",
   updatedLabel: "November 12, 2026",
