@@ -65,6 +65,12 @@ export function Footer() {
           <span>
             © 2026 Face Cutout Studio · Updated <time dateTime={SITE.updated}>{SITE.updatedLabel}</time>
           </span>
+          <span className="foot-links">
+            <Link href="/about/">About</Link>
+            <Link href="/contact/">Contact</Link>
+            <Link href="/privacy-policy/">Privacy</Link>
+            <Link href="/terms/">Terms</Link>
+          </span>
           <span>Etsy, Shopify and Cricut are trademarks of their respective owners.</span>
         </div>
       </div>

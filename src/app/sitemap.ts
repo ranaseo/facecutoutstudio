@@ -4,7 +4,7 @@ import { SERVICES } from "@/lib/home";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date(SITE.updated);
-  const pages = ["/", "/services/", "/pricing/", "/file-specs/", "/faq/", ...SERVICES.map((s) => `/${s.slug}/`)];
+  const pages = ["/", "/services/", "/pricing/", "/file-specs/", "/faq/", ...SERVICES.map((s) => `/${s.slug}/`), "/about/", "/contact/", "/privacy-policy/", "/terms/"];
   return pages.map((p) => ({
     url: abs(p),
     lastModified,
