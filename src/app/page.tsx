@@ -123,18 +123,6 @@ export default function Home() {
       <section className="hero" aria-labelledby="h1">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <div className="byline">
-              <span className="av" aria-hidden="true">
-                AR
-              </span>
-              <span>
-                By{" "}
-                <a href="#author">
-                  <strong>{SITE.founder}</strong>
-                </a>
-                , founder · Updated <time dateTime={SITE.updated}>{SITE.updatedLabel}</time>
-              </span>
-            </div>
             <h1 id="h1">
               Face cutout design service for <span className="hl">Etsy &amp; Shopify sellers</span>
             </h1>

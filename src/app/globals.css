@@ -66,10 +66,6 @@ section{padding-block:84px}
 .hero{padding-block:56px 72px}
 .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
 .hero-copy{display:flex;flex-direction:column;gap:22px}
-.byline{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);flex-wrap:wrap}
-.byline .av{width:34px;height:34px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-family:var(--display);font-weight:800;color:var(--ink);font-size:14px;flex-shrink:0}
-.byline strong{color:var(--ink);font-weight:600}
-.byline time{font-weight:600;color:var(--ink)}
 .hero h1 .hl{color:var(--pink)}
 .answer{font-size:19.5px;color:var(--ink);max-width:58ch;border-left:4px solid var(--sun);padding-left:18px}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
