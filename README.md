@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Face Cutout Studio
 
-## Getting Started
+Marketing site for [facecutoutstudio.com](https://facecutoutstudio.com), built with Next.js (App Router) and deployed on Vercel. Every page is static.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| What | File |
+| --- | --- |
+| Email, WhatsApp number, "updated" date | `src/lib/site.ts` |
+| Service page text, prices, FAQs | `src/lib/services.ts` |
+| Service list (home, footer, sitemap) | `src/lib/home.ts` |
+| FAQ page questions | `src/lib/faq.tsx` |
+| Pricing page | `src/app/pricing/page.tsx` |
+| File specs page | `src/app/file-specs/page.tsx` |
+| Free trial box (email / WhatsApp buttons) | `src/components/FreeTrialSection.tsx` |
+| Redirects from old WordPress URLs | `next.config.ts` |
+| Styles | `src/app/globals.css` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To show the WhatsApp button, set `whatsapp` in `src/lib/site.ts` to the number in international format, digits only.
 
-## Learn More
+Prices appear both on the page and in the JSON-LD schema. Both read from the same data, so change a price in one place and rebuild.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Import the repository in Vercel (framework preset: Next.js, no environment variables needed) and add `facecutoutstudio.com` under Project → Settings → Domains.
